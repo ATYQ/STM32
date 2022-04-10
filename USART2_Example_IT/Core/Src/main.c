@@ -71,6 +71,7 @@ void UART2_Init(void)
 
  void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
+	// I added description in the callback 
 	 int i = 0;
 	 while(Rx_data[i] != '\r')
 	 {
